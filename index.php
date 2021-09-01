@@ -22,7 +22,7 @@
     <div class="uk-section uk-container">
     	<?php 
 	    	echo "Today is: "; 
-	    	echo date("Y m d");
+	    	echo date("Y m d, h i A");
     	?>
     	<p>
     		<a href="/PHP-Login-System/login.php"> Login </a>
