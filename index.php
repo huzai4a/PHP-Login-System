@@ -1,3 +1,9 @@
+    <?php
+    //allow the config
+    define('__CONFIG__', true);
+    //require the config
+    require_once "inc/config.php";
+    ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,38 +20,17 @@
 
 
     <div class="uk-section uk-container">
-    	<div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid=" ">
-	    		<form class="uk-form-stacked js-login"> <!-- FORM START -->
+    	<?php 
+	    	echo "Today is: "; 
+	    	echo date("Y m d");
+    	?>
+    	<p>
+    		<a href="/PHP-Login-System/login.php"> Login </a>
+    		<a href="/PHP-Login-System/register.php"> Register </a>
+    	</p>
 
-	    <div class="uk-margin">
-	        <label class="uk-form-label" for="form-stacked-text">Email</label>
-	        <div class="uk-form-controls">
-	            <input class="uk-input" id="form-stacked-text" type="email" required="required" placeholder="email@email.com">
-	        </div>
-	    </div>
-
-	    <div class="uk-margin">
-	        <label class="uk-form-label" for="form-stacked-text">Password</label>
-	        <div class="uk-form-controls">
-	            <input class="uk-input" id="form-stacked-text" type="password" required="required" placeholder="your password">
-	        </div>
-	    <div class="uk-margin">
-	    	<button class="uk-button uk-button-default" type="submit"> Login </button>
-	        </div>
-	    </div>
-	</form> <!-- FORM END -->
-    	</div>
     </div>
-    <?php
+ <?php require_once "inc/footer.php" ?>
 
-
-//end of php/start of ui kit
-    ?>
-<!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
-
-<!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
   </body>
 </html>
