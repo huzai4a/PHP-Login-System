@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Title</title>
+        <title>Dashboard</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/uikit.min.css" />
@@ -20,6 +20,7 @@
 
 
     <div class="uk-section uk-container">
+        <h2> Dashboard </h2>
     	<?php 
 	    	echo "Today is: "; 
 	    	echo date("Y m d, h i A");
