@@ -25,6 +25,29 @@ $(document)
 
 	//if the code gets this far we start the ajax process
 	_error.hide();
-	
+
+	$.ajax ({
+		type: 'POST',
+		url: '/ajax/register.php',
+		data: dataObj,
+		dataType: 'JSON',
+		async: true,
+	})
+	.done (function ajaxDone(data){
+		//whatever data is
+		console.log(data);
+	})
+
+	.fail (function ajaxFailed(e) {
+		//this failed
+		console.log(e);
+	})
+
+	.always (function ajaxAlwaysDoThis(data){
+		//always do
+		console.log(always);
+	})
+
+
 	return false;
 })
