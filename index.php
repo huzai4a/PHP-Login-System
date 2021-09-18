@@ -23,6 +23,7 @@
         <h2> Dashboard </h2>
     	<?php 
 	    	echo "Today is: "; 
+            date_default_timezone_set("America/Toronto");
 	    	echo date("Y m d, h i A");
     	?>
     	<p>
