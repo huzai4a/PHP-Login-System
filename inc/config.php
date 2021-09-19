@@ -8,7 +8,7 @@
 	// Our config is below
 
 	//include the db.php file
-	include_once "inc/classes/DB.php";
+	include_once "classes/DB.php";
 
 	$con = DB::getConnection();
 
