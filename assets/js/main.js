@@ -5,17 +5,17 @@ $(document)
 	var _form = $(this);
 	var _error = $(".js-error", _form);
 
-	var data = {
+	var dataObj = {
 		email: $("input[type='email']", _form).val(),
 		password: $("input[type='password']", _form).val()
 	};
 
-	if (data.email.length < 6) {
+	if (dataObj.email.length < 6) {
 		_error
 		     .text("Please enter a valid email address")
 		     .show();
 		return false;
-	} else if (data.password.length < 8) {
+	} else if (dataObj.password.length < 8) {
 				_error
 		     .text("Please enter a password that is at least 8 characters long.")
 		     .show();
@@ -28,7 +28,8 @@ $(document)
 
 	$.ajax ({
 		type: 'POST',
-		url: '/ajax/register.php',
+		//wouldn't work unless I put the root of the folder here (i guess since i have other projects? idk)
+		url: '/PHP-Login-System/ajax/register.php', 
 		data: dataObj,
 		dataType: 'JSON',
 		async: true,
@@ -50,7 +51,7 @@ $(document)
 
 	.always (function ajaxAlwaysDoThis(data){
 		//always do
-		console.log(always);
+		console.log('always');
 	})
 
 

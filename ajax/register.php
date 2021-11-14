@@ -20,7 +20,7 @@
 	    $return['redirect'] = '/dashboard.php';
 	    $return['name'] = 'Huzaifa Syed';
 
-	    echo json_encode($array, JSON_PRETTY_PRINT); exit;
+	    echo json_encode($return, JSON_PRETTY_PRINT); exit;
     } else{
     	//die, kill script, redirect the user, do something regardless
     	exit('test');
