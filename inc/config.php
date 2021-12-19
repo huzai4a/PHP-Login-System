@@ -12,7 +12,7 @@
 
 	//include the db.php file
 	include_once "classes/DB.php";
-	include_once "classes/filter.php";
+	include_once "classes/Filter.php";
 
 	$con = DB::getConnection();
 
