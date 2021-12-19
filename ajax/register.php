@@ -1,4 +1,4 @@
-    <?php
+<?php
     //allow the config
     define('__CONFIG__', true);
     //require the config
@@ -17,7 +17,7 @@
 
 	    //return the proper info back to js to redirect us
 
-	    $return['redirect'] = '/dashboard.php';
+	    $return['redirect'] = '/PHP-Login-System/dashboard.php';
 	    $return['name'] = 'Huzaifa Syed';
 
 	    echo json_encode($return, JSON_PRETTY_PRINT); exit;

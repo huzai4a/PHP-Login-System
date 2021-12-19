@@ -31,14 +31,14 @@ $(document)
 		//wouldn't work unless I put the root of the folder here (i guess since i have other projects? idk)
 		url: '/PHP-Login-System/ajax/register.php', 
 		data: dataObj,
-		dataType: 'JSON',
+		dataType: 'json',
 		async: true,
 	})
 	.done (function ajaxDone(data){
 		//whatever data is
 		console.log(data);
 		if(data.redirect !== undefined){
-			//window location = data.redirect;
+			//window.location = data.redirect;
 		}
 
 		alert(data.name);
