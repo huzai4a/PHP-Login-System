@@ -13,7 +13,7 @@
 
 	    $email = Filter::String( $_POST['email'] );
 
-	    $user_found = findUser($con, $email);
+	    $user_found = User::Find($email);
 
 	    if($user_found){
 	    	//user exists
