@@ -35,6 +35,15 @@ class User {
 		}
 	}
 
+	/*
+	public function setEmail ($new_email) {
+		echo $this->email; //current email address
+		echo $this->user_id; //existing user id
+
+		$this->con->prepare(...);
+	}
+	*/
+
 	public static function Find ($email, $return_assoc = false){
 	    //make sure this user does not exist
 		$con = DB::getConnection();
