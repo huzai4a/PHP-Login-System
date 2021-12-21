@@ -3,6 +3,8 @@
     define('__CONFIG__', true);
     //require the config
     require_once "inc/config.php";
+
+    forceDashboard();
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,7 +44,7 @@
 
 	        <div class="uk-margin uk-alert uk-alert-danger js-error" style="display: none;"></div>
 
-	        
+
 	    <div class="uk-margin">
 	    	<button class="uk-button uk-button-default" type="submit"> Login </button>
 	        </div>
