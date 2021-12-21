@@ -5,6 +5,11 @@
 		exit("you don't have a config file.");
 	}
 
+	//sessions are always turned on
+	if(!isset($_SESSION)){
+		session_start();
+	}
+
 	// Our config is below
 	//Allow errors
 	error_reporting(-1);
