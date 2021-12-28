@@ -1,8 +1,172 @@
-body{
-    background-color: yellow;
-    height: 200em;
-    border: 0;
+/*importing fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@600&display=swap');
+
+/*navbar start*/
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 0;
+}
+body{
+    background-color: #5CDB95;
+    height: 200em;
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 20px;
+    background: #edf5e0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    color: #05396b;
+    text-decoration: none;
+}
+a:hover{
+    color: #001e3b;
+}
+.menu li{
+    font-size: 18px;
+    padding: 15px 5px;
+}
+.menu li a{
+    display: block;
+}
+.logo{
+    
+}
+.button.secondary{
+    border-bottom: 1px #05396b solid;
+}
+
+
+
+
+
+/*mobile menu*/
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle{
+  order: 1;
+}
+.item.button{
+  order: 2;
+}
+.item{
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+.item.active{
+  display: block;
+}
+.toggle{
+  cursor: pointer;
+}
+.bars{
+  background: #05396b;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  width: 18px;
+}
+.bars::before,.bars::after{
+  background: #05396b;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: absolute;
+  width: 18px;
+}
+.bars::before{
+  top: 5px;
+}
+.bars::after{
+  top: -5px;
+}
+
+
+
+
+
+
+/*tablet menu*/
+
+@media all and (min-width: 768px){
+  .menu{
+    justify-content: center;
+  }
+  .logo{
+    flex: 1;
+  }
+  .item.button{
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  .toggle{
+    order: 2;
+  }
+  .button.secondary{
+    border: 0;
+  }
+  .button a{
+    text-decoration: none;
+    padding: 7px 15px;
+    background: #05396b;
+    color: #5CDB95;
+    border-radius: 50em;
+  }
+  .button.secondary a{
+    background: #5CDB95;
+    color: #05396b;
+  }
+  .button a:hover{
+    transition: all .25s;
+  }
+  .button:not(.secondary) a:hover{
+    background: #5CDB95;
+    color: #05396b;
+  }
+  .button.secondary a:hover{
+    background: #05396b;
+    color: #5CDB95;
+  }
+}
+
+
+
+
+
+/*desktop menu*/
+
+@media all and (min-width: 968px){
+  .item{
+    display: block;
+    width: auto;
+    order: 1;
+  }
+  .toggle{
+    display: none;
+  }
+  .logo{
+    order: 0;
+  }
+  .button{
+    order: 2;
+  }
+  .menu li{
+    padding: 15px 10px;
+  }
+  .menu li.button{
+    padding-right: 0;
+  }
 }
