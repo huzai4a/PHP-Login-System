@@ -5,6 +5,7 @@
     require_once "inc/config.php";
 
     Page::forceDashboard();
+    require_once "inc/footer.php";
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,43 +16,50 @@
     <meta name="robots" content="follow">
 
     <title>Register</title>
-
-    <base href="/" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
   </head>
 
   <body>
 
-    <div class="uk-section uk-container">
-    	<div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid>
-	    		<form class="uk-form-stacked js-register"> <!-- FORM START -->
-	    	
-	    	<h2> Register </h2>
+<a href="/PHP-Login-System/index.php" class="d-flex justify-content-center mt-2">
+	<img src="/PHP-Login-System/img/brand.png" alt="LOGO" style="width:5em; height:5em;">
+</a>
 
-	    <div class="uk-margin">
-	        <label class="uk-form-label" for="form-stacked-text">Email</label>
-	        <div class="uk-form-controls">
-	            <input class="uk-input" id="form-stacked-text" type="email" required="required" placeholder="email@email.com">
-	        </div>
-	    </div>
+<!-- Card -->
+<div class="container-fluid pt-2 mb-3" style="width: 25em;">
+<div class="card round" style="height: 20em;">
 
-	    <div class="uk-margin">
-	        <label class="uk-form-label" for="form-stacked-text">Password</label>
-	        <div class="uk-form-controls">
-	            <input class="uk-input" id="form-stacked-text" type="password" required="required" placeholder="Your Password">
-	        </div>
+	<!-- Register form -->
+	<div class="container-fluid mx-auto mt-5">
+		<form class="js-register">
+			<h2 class="pb-2"> Register </h2>
+						<div class="col-sm" style="width: 20em;">
+							<div class="form-group">
+					<label>Email Address</label>
+					<input type="email" class="form-control form-control-sm" aria-describedby="emailHelp" placeholder="email@email.com" required="required">
+				</div>
 
-	        <div class="uk-margin uk-alert uk-alert-danger js-error" style="display: none;"></div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" class="form-control form-control-sm" required="required" placeholder="your password">
+				</div>
 
+				<div class="alert alert-danger js-error mt-2 mb-0" style="display: none;" role="alert"></div>
 
-	    <div class="uk-margin">
-	    	<button class="uk-button uk-button-default" type="submit"> Register </button>
-	        </div>
-	    </div>
-	</form> <!-- FORM END -->
-    	</div>
-    </div>
- <?php require_once "inc/footer.php" ?>
+				<button type="submit" class="btn btn-primary mt-2 log-reg-btn">Register</button>
+			</div>
+		</form>
+	</div>
+
+</div>
+</div>
+
+<div class="container-fluid d-flex justify-content-center">
+		<h6 class="line"><span class="txt"> Already have an Account? </span></h6>
+</div>
+
+<div class="container-fluid d-flex justify-content-center">
+		<a role="button" class="btn btn-primary acc-btn" href="/PHP-Login-System/login.php">Login</a>
+</div>
 
   </body>
 </html>

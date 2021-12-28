@@ -18,7 +18,7 @@
 	    if($user_found){
 	    	//user exists
 	    	//we can also check to see if they are able to login
-	    	$return['error'] = "You already have an account";
+	    	$return['error'] = "You already have an account. Please login.";
 	  		$return['is_logged_in'] = false;
 	    } else{
 	    	//user does not exist, add them now
