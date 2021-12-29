@@ -28,7 +28,7 @@
 	    		$_SESSION['user_id'] = $user_id;
 	    	} else {
 	    		//invalid user email/password combo
-	    		$return['error'] = "invalid user email/password combo";
+	    		$return['error'] = "invalid email or password";
 	    	}
 
 

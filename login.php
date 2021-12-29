@@ -38,12 +38,15 @@
 
 				<div class="form-group">
 					<label>Password</label>
-					<input type="password" class="form-control form-control-sm" required="required" placeholder="your password">
+					<input type="password" class="form-control form-control-sm" required="required" placeholder="your password" id="myPassword">
 				</div>
 
 				<div class="alert alert-danger js-error mt-2 mb-0" style="display: none;" role="alert"></div>
-				
-				<button type="submit" class="btn btn-primary mt-2 log-reg-btn mb-3">Login</button>
+
+				<!-- An element to toggle between password visibility -->
+				<input type="checkbox" onclick="myFunction()" class="mt-2"> Show Password<br>
+
+				<button type="submit" class="btn btn-primary mt-1 log-reg-btn mb-3">Login</button>
 			</div>
 		</form>
 	</div>
