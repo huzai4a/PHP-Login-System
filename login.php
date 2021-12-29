@@ -14,10 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="follow">
-
     <title>Login</title>
-
-
   </head>
 
   <body>
@@ -28,7 +25,7 @@
 
 <!-- Card -->
 <div class="container-fluid pt-2 mb-3" style="width: 25em;">
-<div class="card round" style="height: 20em;">
+<div class="card round">
 	<!-- Login form -->
 	<div class="container-fluid mx-auto mt-5">
 		<form class="js-login">
@@ -45,8 +42,8 @@
 				</div>
 
 				<div class="alert alert-danger js-error mt-2 mb-0" style="display: none;" role="alert"></div>
-
-				<button type="submit" class="btn btn-primary mt-2 log-reg-btn">Login</button>
+				
+				<button type="submit" class="btn btn-primary mt-2 log-reg-btn mb-3">Login</button>
 			</div>
 		</form>
 	</div>

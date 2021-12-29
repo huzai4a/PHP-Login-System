@@ -14,7 +14,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="follow">
-
     <title>Register</title>
   </head>
 
@@ -26,7 +25,7 @@
 
 <!-- Card -->
 <div class="container-fluid pt-2 mb-3" style="width: 25em;">
-<div class="card round" style="height: 20em;">
+<div class="card round">
 
 	<!-- Register form -->
 	<div class="container-fluid mx-auto mt-5">
@@ -45,7 +44,7 @@
 
 				<div class="alert alert-danger js-error mt-2 mb-0" style="display: none;" role="alert"></div>
 
-				<button type="submit" class="btn btn-primary mt-2 log-reg-btn">Register</button>
+				<button type="submit" class="btn btn-primary mt-2 log-reg-btn mb-3">Register</button>
 			</div>
 		</form>
 	</div>
