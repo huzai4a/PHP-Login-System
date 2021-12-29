@@ -11,26 +11,6 @@
 <!-- link to css sheet -->
 <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 
-<!-- for navbar toggling -->
-<script>
-        
-	$(function() {
-	    
-	    $(".toggle").on("click", function() {
-
-	        if($(".item").hasClass("active")) {
-	            $(".item").removeClass("active");
-	        }
-	        else{
-	            $(".item").addClass("active");
-	        }
-
-	    })
-
-	});
-
-</script>
-
 <!-- for show password toggling -->
 <script>
 
